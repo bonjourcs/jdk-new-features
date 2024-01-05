@@ -43,6 +43,15 @@ class CodeTest {
     public void testCollectionToArray() {
         List<String> list = List.of("hello", "world", "!");
         String[] array = list.toArray(new String[3]);
+        assertEquals(3, array.length);
+    }
+
+    @Test
+    @DisplayName("构建不可变集合")
+    public void testNewImmutableCollection() {
+        List<Integer> list1 = List.of(1, 2, 3);
+        List<Integer> list2 = List.copyOf(list1);
+        assertEquals(list2, list1);
     }
 
 }
