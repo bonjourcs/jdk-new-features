@@ -37,4 +37,12 @@ class CodeTest {
                 .filter(Predicate.not(i -> i > 3)).collect(Collectors.toList());
         assertEquals(3, result.size());
     }
+
+    @Test
+    @DisplayName("Collection新功能")
+    public void testCollectionToArray() {
+        List<String> list = List.of("hello", "world", "!");
+        String[] array = list.toArray(new String[3]);
+    }
+
 }
