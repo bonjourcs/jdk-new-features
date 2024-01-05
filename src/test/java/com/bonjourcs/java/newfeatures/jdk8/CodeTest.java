@@ -9,9 +9,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.time.*;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -49,6 +48,28 @@ class CodeTest {
         ArrayList<Foo> foos = Lists.newArrayList(new Foo("hello"), new Foo("world"));
         String result = foos.stream().map(Foo::getName).map(String::toUpperCase).collect(Collectors.joining(","));
         Assertions.assertEquals("HELLO,WORLD", result);
+    }
+
+    @Test
+    @DisplayName("Optional类")
+    public void testOptional() {
+        Foo foo = null;
+        String result = Optional.ofNullable(foo).map(Foo::getName).orElse("NIL");
+        Assertions.assertEquals("NIL", result);
+    }
+
+    @Test
+    @DisplayName("新的日期时间类")
+    public void testLocalDateEtc() {
+        // LocalDate转换成Date
+        LocalDate now = LocalDate.now();
+        Instant instant = now.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant();
+        Date from = Date.from(instant);
+        // Date转换成LocalDate
+        Date date = new Date();
+        ZonedDateTime zonedDateTime = date.toInstant().atZone(ZoneId.systemDefault());
+        LocalDateTime localDateTime = zonedDateTime.toLocalDateTime();
+        System.out.println(localDateTime);
     }
 
     @FunctionalInterface

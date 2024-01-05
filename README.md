@@ -24,3 +24,6 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 
 - Lambda 表达式
 - 方法引用
+- Stream API
+- Optional 
+- 新的日期时间类
