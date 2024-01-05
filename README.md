@@ -40,4 +40,8 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 ## JDK 10
 
 - var关键字
-- 
+
+## JDK 11
+
+- String类增加新的方法
+- Predicate增加新的方法
