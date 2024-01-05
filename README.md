@@ -36,3 +36,8 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 - 接口私有化
 - Stream API 增强
 - try-with-resource增强
+
+## JDK 10
+
+- var关键字
+- 
