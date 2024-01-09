@@ -61,3 +61,8 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 - 增强的文本块
 - instanceof增强
 - record类型
+
+## JDK 15
+
+- sealed class
+- 
