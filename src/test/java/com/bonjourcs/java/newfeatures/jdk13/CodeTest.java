@@ -34,4 +34,18 @@ class CodeTest {
             }
         };
     }
+
+    @Test
+    @DisplayName("文本块")
+    public void testStringCode() {
+        var str = """
+                <html>
+                    <head><title>NEW</title></head>
+                </html>
+                <body>
+                    <p>这是一个文本块...</p>
+                </body>
+                """;
+        System.out.println(str);
+    }
 }

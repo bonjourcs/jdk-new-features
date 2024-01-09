@@ -25,7 +25,7 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 - Lambda 表达式
 - 方法引用
 - Stream API
-- Optional 
+- Optional
 - 新的日期时间类
 
 ## JDK 9
@@ -50,3 +50,8 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 ## JDK 12
 
 - 增强的Switch语句
+
+## JDK 13
+
+- 增强的Switch语句（增加yield关键字）
+- 文本块
