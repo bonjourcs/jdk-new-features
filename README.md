@@ -73,3 +73,11 @@ nothing special
 ## JDK 17
 
 - 新的日期格式化
+
+## JDK 18
+
+nothing special
+
+## JDK 19
+
+- record模式匹配
