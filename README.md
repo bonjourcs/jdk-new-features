@@ -49,11 +49,11 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 
 ## JDK 12
 
-- 增强的Switch语句
+- 增强的switch语句
 
 ## JDK 13
 
-- 增强的Switch语句（增加yield关键字）
+- 增强的switch语句（增加yield关键字）
 - 文本块
 
 ## JDK 14
@@ -65,4 +65,11 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 ## JDK 15
 
 - sealed class
-- 
+
+## JDK 16
+
+nothing special
+
+## JDK 17
+
+- 新的日期格式化
