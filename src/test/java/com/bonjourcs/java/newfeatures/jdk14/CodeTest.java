@@ -1,6 +1,7 @@
 package com.bonjourcs.java.newfeatures.jdk14;
 
 import com.bonjourcs.java.newfeatures.annotation.JDK;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -35,6 +36,21 @@ class CodeTest {
             System.out.printf("string length is %d%n", str.length());
         } else {
             System.out.println("not a string");
+        }
+    }
+
+    @Test
+    @DisplayName("record关键字")
+    public void testRecord() {
+        var tom = new Person("tom");
+        var jerry = new Person(10, "jerry");
+        Assertions.assertEquals(0, tom.age);
+        Assertions.assertEquals(10, jerry.age);
+    }
+
+    record Person(int age, String name) {
+        public Person(String name) {
+            this(0, name);
         }
     }
 }
