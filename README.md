@@ -81,3 +81,11 @@ nothing special
 ## JDK 19
 
 - record模式匹配
+
+## JDK 20
+
+nothing special
+
+## JDK 21
+
+- 虚拟线程
