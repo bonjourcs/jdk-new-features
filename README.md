@@ -55,3 +55,8 @@ Java 各个版本的新功能和代码解释。在 test 包下有各个版本的
 
 - 增强的Switch语句（增加yield关键字）
 - 文本块
+
+## JDK 14
+
+- 增强的文本块
+- instanceof增强
